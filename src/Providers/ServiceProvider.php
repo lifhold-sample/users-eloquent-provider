@@ -18,5 +18,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
         foreach ($this->binds as $bind => $service) {
             $this->app->bind($bind, $service);
         }
+
+        $this->loadMigrationsFrom(__DIR__ . "/../../database/migrations");
     }
 }
