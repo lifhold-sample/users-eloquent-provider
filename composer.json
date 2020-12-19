@@ -1,0 +1,26 @@
+{
+    "name": "lifhold-sample/users-eloquent-provider",
+    "authors": [
+        {
+            "name": "Lukasz Grajewski",
+            "email": "grajewski.lukasz@wp.pl"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Lifhold\\Users\\Eloquent\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Lifhold\\Users\\Eloquent\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "illuminate/database": "~7.0 || ~8.0",
+        "illuminate/events": "~7.0 || ~8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    }
+}
